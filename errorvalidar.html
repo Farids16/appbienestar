@@ -1,0 +1,40 @@
+<html lang="es"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+      <title>Admin UPC </title>
+          <link rel="stylesheet" href="../css/style.css">
+          <script src="view/plugins/jquery/jquery.min.js"></script>
+          <!-- Bootstrap -->
+          <script src="view/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <!-- AdminLTE -->
+          <script src="view/dist/js/adminlte.js"></script>
+  </head>
+  <body>
+    <form action="../controller/controlador.php" method="POST" >
+      <input type="hidden" name="op" value="1" >
+
+      <div class="login_form_container">
+        <div class="login_form">         
+            <h2>Bienestar Institucional</h2>
+            <div class="input_group">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Usuario" class="input_text" autocomplete="off" id="usuario" name="usuario" required>
+            </div>
+            <div class="input_group">
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" placeholder="Contraseña" class="input_text" autocomplete="off" id="clave" name="clave"  required>
+            </div>
+            <div class="button_group" id="login_button">
+              <div style="text-align: center; color: red;">
+                <label>¡Error, revise los campos!</label>
+              </div>
+                <button type="submit">Ingresar</button>
+            </div>
+        </div>
+      </div>
+    </form>
+  </body>   
+
+</html>

@@ -1,7 +1,7 @@
   <?php
 require_once("../model/gestionBienestar.php");
 
-echo"inesrtar plato base llamo";
+echo"El plato se creo correctamente";
 
 $platos=new gestionBienestar();
 

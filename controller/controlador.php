@@ -25,7 +25,7 @@ case 1://
 		require_once('../view/administracion.php');
 	}
 	else{
-		require_once('../error validar.html');
+		require_once('../errorvalidar.html');
 	}
 
 	break;
