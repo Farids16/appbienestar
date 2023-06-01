@@ -42,6 +42,19 @@ class gestionBienestar
     return $this->todosdatos;
   }
 
+<<<<<<< Updated upstream
+=======
+  /////////////////////////////////////////////////////////////////////////////////////
+  public function consultarPlatosApi()
+  {
+    $consulta = $this->db->query("SELECT id, nombre FROM platos");
+    while ($fila = $consulta->fetch(PDO::FETCH_ASSOC)) {
+      $this->todosdatos[] = $fila;
+    } //cieraa while
+    return $this->todosdatos;
+  }
+
+>>>>>>> Stashed changes
   public function datosDispositivoFecha($fechai, $fechaf)
   {
     $consulta = $this->db->query("SELECT * FROM dispensador WHERE fecha BETWEEN '$fechai' and '$fechaf'");
